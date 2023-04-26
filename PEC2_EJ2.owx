@@ -1,0 +1,570 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Autor: Joan Serra Rodríguez</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>Wine Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Albarino"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CabernetSauvignon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cava"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chardonnay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grenache"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mencia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monastrell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MontsantRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PedroXimenez"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrioratRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiberaDelDueroRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiojaRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiojaWhite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sherry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sparkling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Syrah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tempranillo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToroRed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Valoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verdejo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#elaboratedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAValorationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComments"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#acidity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#body"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#countryName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numOfComments"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#regionName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wineName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wineryName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#year"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegionTesoLaMonja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tinto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ValorationTinto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WineryTesoLaMonja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#2013"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Rating"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#rating"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAValorationOf"/>
+            <Class IRI="#Valoration"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Year"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#year"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMaxCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Albarino"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CabernetSauvignon"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cava"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chardonnay"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grenache"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mencia"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monastrell"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MontsantRed"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PedroXimenez"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrioratRed"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rating"/>
+        <Class IRI="#Valoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Red"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Region"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <Class IRI="#Valoration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiberaDelDueroRed"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiojaRed"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiojaWhite"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sherry"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sparkling"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Syrah"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tempranillo"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ToroRed"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verdejo"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Albarino"/>
+        <Class IRI="#CabernetSauvignon"/>
+        <Class IRI="#Cava"/>
+        <Class IRI="#Chardonnay"/>
+        <Class IRI="#Grenache"/>
+        <Class IRI="#Mencia"/>
+        <Class IRI="#Monastrell"/>
+        <Class IRI="#MontsantRed"/>
+        <Class IRI="#PedroXimenez"/>
+        <Class IRI="#PrioratRed"/>
+        <Class IRI="#Red"/>
+        <Class IRI="#RiberaDelDueroRed"/>
+        <Class IRI="#RiojaRed"/>
+        <Class IRI="#RiojaWhite"/>
+        <Class IRI="#Sherry"/>
+        <Class IRI="#Sparkling"/>
+        <Class IRI="#Syrah"/>
+        <Class IRI="#Tempranillo"/>
+        <Class IRI="#ToroRed"/>
+        <Class IRI="#Verdejo"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#RegionTesoLaMonja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ToroRed"/>
+        <NamedIndividual IRI="#Tinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Valoration"/>
+        <NamedIndividual IRI="#ValorationTinto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#WineryTesoLaMonja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Year"/>
+        <NamedIndividual IRI="#2013"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#elaboratedIn"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#2013"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAValorationOf"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <NamedIndividual IRI="#ValorationTinto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#WineryTesoLaMonja"/>
+        <NamedIndividual IRI="#RegionTesoLaMonja"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#regionName"/>
+        <NamedIndividual IRI="#RegionTesoLaMonja"/>
+        <Literal>Toro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#countryName"/>
+        <NamedIndividual IRI="#Spain"/>
+        <Literal>Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acidity"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#body"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#price"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">995.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wineName"/>
+        <NamedIndividual IRI="#Tinto"/>
+        <Literal>Tinto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numOfComments"/>
+        <NamedIndividual IRI="#ValorationTinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">58</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#ValorationTinto"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wineryName"/>
+        <NamedIndividual IRI="#WineryTesoLaMonja"/>
+        <Literal>Teso La Monja</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#2013"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2013</Literal>
+    </DataPropertyAssertion>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </AsymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#elaboratedIn"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAValorationOf"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComments"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#Winery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#Winery"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#elaboratedIn"/>
+        <Class IRI="#Year"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAValorationOf"/>
+        <Class IRI="#Valoration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComments"/>
+        <Class IRI="#Review"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#body"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#year"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#acidity"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#body"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#countryName"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numOfComments"/>
+        <Class IRI="#Review"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#price"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rating"/>
+        <Class IRI="#Rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#regionName"/>
+        <Class IRI="#Region"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wineName"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wineryName"/>
+        <Class IRI="#Winery"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#year"/>
+        <Class IRI="#Year"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#acidity"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#body"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#countryName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numOfComments"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#price"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rating"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#regionName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wineName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wineryName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#year"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Albarino</IRI>
+        <Literal>Represents the class Albariño. A type of white wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal>Represents the class of a country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region</IRI>
+        <Literal>Represents the region of a particular country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Winery</IRI>
+        <Literal>Represents the class of a winery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#elaboratedIn</IRI>
+        <Literal>Indicates the year of production of a wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAValorationOf</IRI>
+        <Literal>Indicates the rating of a wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLocatedIn</IRI>
+        <Literal>Indicates the region of the winery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#produces</IRI>
+        <Literal>Indicates the wine produced by the winery</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
