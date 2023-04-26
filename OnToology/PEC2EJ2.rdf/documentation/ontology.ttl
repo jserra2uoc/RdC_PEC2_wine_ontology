@@ -1,0 +1,352 @@
+@prefix : <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#> .
+
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6> rdf:type owl:Ontology ;
+                                                                         rdfs:comment "Autor: Joan Serra Rodríguez" ;
+                                                                         rdfs:label "Wine Ontology" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn
+:elaboratedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Wine ;
+              rdfs:range :Year ;
+              rdfs:comment "Indicates the year of production of a wine" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf
+:hasAValorationOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Wine ;
+                  rdfs:range :Valoration ;
+                  rdfs:comment "Indicates the rating of a wine" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasComments
+:hasComments rdf:type owl:ObjectProperty ;
+             rdfs:domain :Wine ;
+             rdfs:range :Review .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ,
+                      owl:AsymmetricProperty ;
+             rdfs:domain :Winery ;
+             rdfs:range :Region ;
+             rdfs:comment "Indicates the region of the winery" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces
+:produces rdf:type owl:ObjectProperty ;
+          rdfs:domain :Winery ;
+          rdfs:range :Wine ;
+          rdfs:comment "Indicates the wine produced by the winery" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity
+:acidity rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Wine ;
+         rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body
+:body rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Wine ;
+      rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments
+:numOfComments rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Review ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price
+:price rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Wine ;
+       rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Rating ;
+        rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName
+:regionName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Region ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName
+:wineName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Wine ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName
+:wineryName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Winery ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Year ;
+      rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino
+:Albarino rdf:type owl:Class ;
+          rdfs:subClassOf :Wine ;
+          rdfs:comment "Represents the class Albariño. A type of white wine" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon
+:CabernetSauvignon rdf:type owl:Class ;
+                   rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava
+:Cava rdf:type owl:Class ;
+      rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay
+:Chardonnay rdf:type owl:Class ;
+            rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "Represents the class of a country" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache
+:Grenache rdf:type owl:Class ;
+          rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia
+:Mencia rdf:type owl:Class ;
+        rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell
+:Monastrell rdf:type owl:Class ;
+            rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed
+:MontsantRed rdf:type owl:Class ;
+             rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez
+:PedroXimenez rdf:type owl:Class ;
+              rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed
+:PrioratRed rdf:type owl:Class ;
+            rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating
+:Rating rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :rating ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ;
+        rdfs:subClassOf :Valoration .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red
+:Red rdf:type owl:Class ;
+     rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :Country ;
+        rdfs:comment "Represents the region of a particular country" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review
+:Review rdf:type owl:Class ;
+        rdfs:subClassOf :Valoration .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed
+:RiberaDelDueroRed rdf:type owl:Class ;
+                   rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed
+:RiojaRed rdf:type owl:Class ;
+          rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite
+:RiojaWhite rdf:type owl:Class ;
+            rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry
+:Sherry rdf:type owl:Class ;
+        rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling
+:Sparkling rdf:type owl:Class ;
+           rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah
+:Syrah rdf:type owl:Class ;
+       rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo
+:Tempranillo rdf:type owl:Class ;
+             rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed
+:ToroRed rdf:type owl:Class ;
+         rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration
+:Valoration rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo
+:Verdejo rdf:type owl:Class ;
+         rdfs:subClassOf :Wine .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine
+:Wine rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasAValorationOf ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :Valoration
+                          ] .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery
+:Winery rdf:type owl:Class ;
+        rdfs:comment "Represents the class of a winery" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year
+:Year rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :year ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:string
+                          ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja
+:RegionTesoLaMonja rdf:type owl:NamedIndividual ,
+                            :Region ;
+                   :regionName "Toro" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Spain
+:Spain rdf:type owl:NamedIndividual ,
+                :Country ;
+       :countryName "Spain" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto
+:Tinto rdf:type owl:NamedIndividual ,
+                :ToroRed ;
+       :elaboratedIn <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013> ;
+       :hasAValorationOf :ValorationTinto ;
+       :acidity "3"^^xsd:int ;
+       :body "5"^^xsd:int ;
+       :price "995.0"^^xsd:float ;
+       :wineName "Tinto" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto
+:ValorationTinto rdf:type owl:NamedIndividual ,
+                          :Valoration ;
+                 :numOfComments "58"^^xsd:int ;
+                 :rating "4.9"^^xsd:float .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#WineryTesoLaMonja
+:WineryTesoLaMonja rdf:type owl:NamedIndividual ,
+                            :Winery ;
+                   :isLocatedIn :RegionTesoLaMonja ;
+                   :wineryName "Teso La Monja" .
+
+
+###  http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013> rdf:type owl:NamedIndividual ,
+                                                                                      :Year ;
+                                                                             :year "2013"^^xsd:int .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Albarino
+                :CabernetSauvignon
+                :Cava
+                :Chardonnay
+                :Grenache
+                :Mencia
+                :Monastrell
+                :MontsantRed
+                :PedroXimenez
+                :PrioratRed
+                :Red
+                :RiberaDelDueroRed
+                :RiojaRed
+                :RiojaWhite
+                :Sherry
+                :Sparkling
+                :Syrah
+                :Tempranillo
+                :ToroRed
+                :Verdejo
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

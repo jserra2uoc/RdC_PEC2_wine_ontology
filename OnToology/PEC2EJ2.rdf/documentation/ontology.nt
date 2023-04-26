@@ -1,0 +1,357 @@
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6> <http://www.w3.org/2000/01/rdf-schema#comment> "Autor: Joan Serra Rodríguez" .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the year of production of a wine" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the rating of a wine" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasComments
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasComments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasComments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasComments> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the region of the winery" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the wine produced by the winery" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the class Albariño. A type of white wine" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the class of a country" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the region of a particular country" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the class of a winery" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName> "Toro" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Spain
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Spain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Spain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Spain> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName> "Spain" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body> "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price> "995.0"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName> "Tinto" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments> "58"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating> "4.9"^^<http://www.w3.org/2001/XMLSchema#float> .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#WineryTesoLaMonja
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#WineryTesoLaMonja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#WineryTesoLaMonja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#WineryTesoLaMonja> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#WineryTesoLaMonja> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName> "Teso La Monja" .
+# 
+# http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year> .
+<http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year> "2013"^^<http://www.w3.org/2001/XMLSchema#int> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid4 <http://www.w3.org/2002/07/owl#members> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

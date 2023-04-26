@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "untitled-ontology-6:RiberaDelDueroRed" "untitled-ontology-6:Sherry" "untitled-ontology-6:Syrah" "untitled-ontology-6:CabernetSauvignon" "untitled-ontology-6:Cava" "untitled-ontology-6:Region" "untitled-ontology-6:PedroXimenez" "untitled-ontology-6:Mencia" "untitled-ontology-6:PrioratRed" "untitled-ontology-6:Review" "untitled-ontology-6:Valoration" "untitled-ontology-6:Grenache" "untitled-ontology-6:ToroRed" "untitled-ontology-6:Verdejo" "untitled-ontology-6:Monastrell" "untitled-ontology-6:Country" "untitled-ontology-6:RiojaWhite" "untitled-ontology-6:Sparkling" "untitled-ontology-6:Wine" "untitled-ontology-6:RiojaRed" "untitled-ontology-6:Chardonnay" "untitled-ontology-6:Red" "untitled-ontology-6:Tempranillo" "untitled-ontology-6:MontsantRed" "untitled-ontology-6:Albarino" "untitled-ontology-6:Rating" ; /*classes style*/
+	"untitled-ontology-6:PedroXimenez" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Rating" -> "untitled-ontology-6:Valoration" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Grenache" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Red" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Sherry" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:CabernetSauvignon" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Review" -> "untitled-ontology-6:Valoration" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:ToroRed" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:RiberaDelDueroRed" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:RiojaWhite" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:RiojaRed" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:PrioratRed" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Cava" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Verdejo" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Monastrell" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Mencia" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:MontsantRed" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Chardonnay" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Albarino" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Region" -> "untitled-ontology-6:Country" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Sparkling" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Tempranillo" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+	"untitled-ontology-6:Syrah" -> "untitled-ontology-6:Wine" [ label = "rdfs:subClassOf" ];
+
+}

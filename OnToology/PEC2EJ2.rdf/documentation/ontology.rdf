@@ -1,0 +1,600 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6">
+        <rdfs:comment>Autor: Joan Serra Rodríguez</rdfs:comment>
+        <rdfs:label>Wine Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year"/>
+        <rdfs:comment>Indicates the year of production of a wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration"/>
+        <rdfs:comment>Indicates the rating of a wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasComments -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasComments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region"/>
+        <rdfs:comment>Indicates the region of the winery</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:comment>Indicates the wine produced by the winery</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+        <rdfs:comment>Represents the class Albariño. A type of white wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country">
+        <rdfs:comment>Represents the class of a country</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country"/>
+        <rdfs:comment>Represents the region of a particular country</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery">
+        <rdfs:comment>Represents the class of a winery</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region"/>
+        <regionName>Toro</regionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Spain -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Spain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country"/>
+        <countryName>Spain</countryName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tinto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed"/>
+        <elaboratedIn rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013"/>
+        <hasAValorationOf rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto"/>
+        <acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</acidity>
+        <body rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</body>
+        <price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">995.0</price>
+        <wineName>Tinto</wineName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ValorationTinto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration"/>
+        <numOfComments rdf:datatype="http://www.w3.org/2001/XMLSchema#int">58</numOfComments>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.9</rating>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#WineryTesoLaMonja -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#WineryTesoLaMonja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery"/>
+        <isLocatedIn rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RegionTesoLaMonja"/>
+        <wineryName>Teso La Monja</wineryName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#2013">
+        <rdf:type rdf:resource="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year"/>
+        <year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2013</year>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
