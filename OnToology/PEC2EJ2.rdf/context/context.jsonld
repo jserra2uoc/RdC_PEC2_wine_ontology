@@ -1,0 +1,157 @@
+{
+  "@context" : {
+    "ToroRed" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#ToroRed"
+    },
+    "CabernetSauvignon" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#CabernetSauvignon"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Review"
+    },
+    "Winery" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Winery"
+    },
+    "regionName" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#regionName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Country"
+    },
+    "body" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#body",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Mencia" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Mencia"
+    },
+    "Syrah" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Syrah"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "PedroXimenez" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PedroXimenez"
+    },
+    "RiojaRed" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaRed"
+    },
+    "countryName" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "MontsantRed" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#MontsantRed"
+    },
+    "wineryName" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "elaboratedIn" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#elaboratedIn",
+      "@type" : "@id"
+    },
+    "hasComments" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasComments",
+      "@type" : "@id"
+    },
+    "Monastrell" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Monastrell"
+    },
+    "numOfComments" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#numOfComments",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Sherry" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sherry"
+    },
+    "Grenache" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Grenache"
+    },
+    "RiojaWhite" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiojaWhite"
+    },
+    "acidity" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#acidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Rating"
+    },
+    "Red" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Red"
+    },
+    "produces" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#produces",
+      "@type" : "@id"
+    },
+    "Tempranillo" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Tempranillo"
+    },
+    "year" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Valoration" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Valoration"
+    },
+    "PrioratRed" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#PrioratRed"
+    },
+    "Year" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Year"
+    },
+    "hasAValorationOf" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#hasAValorationOf",
+      "@type" : "@id"
+    },
+    "Verdejo" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Verdejo"
+    },
+    "wineName" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#wineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "RiberaDelDueroRed" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#RiberaDelDueroRed"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "price" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "rating" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Sparkling" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Sparkling"
+    },
+    "Cava" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Cava"
+    },
+    "Region" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Region"
+    },
+    "Chardonnay" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Chardonnay"
+    },
+    "isLocatedIn" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#isLocatedIn",
+      "@type" : "@id"
+    },
+    "Albarino" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Albarino"
+    },
+    "Wine" : {
+      "@id" : "http://www.semanticweb.org/joan/ontologies/2023/3/untitled-ontology-6#Wine"
+    }
+  }
+}
